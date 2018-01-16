@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Quiz about you knowladge of the ocean">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz App</title>
+
+<!-- Responsive viewport tag, tells small screens that it's responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Normalize.css, a cross-browser reset file -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css" rel="stylesheet">
+
+<!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+
+<!-- Stylesheets -->
+  <link rel="stylesheet" href="the-grid.css" />
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<!-- Start page -->
+  <body>
+    <header>
+    <h1>How well do you know the Ocean?</h1>
+    </header>
+  <main role="main">
+    <div class="quiz-card">
+      <div class='txt-center'>
+        <input type="image" src="http://melissarte.com/wp-content/uploads/2018/01/start_btn.png" alt="start" role="button" id="start-quiz" class="button"> 
+      </div>
+      
+<!-- Question page -->
+      <section id='my-quiz' class='question hidden'>
+
+  <!-- Questions start here -->    
+        <h3 class='js-question-text'>My question here:</h3>
+        <form id='question-form'>
+          <label class='answer'>
+            <input type="radio" name="answerChoice" required>
+            <span></span>
+          </label><br>
+          <label class='answer'>
+            <input type="radio" name="answerChoice" required>
+              <span></span>
+          </label><br>
+          <label class='answer'>
+            <input type="radio" name="answerChoice" required>
+              <span></span>
+          </label><br>
+          <label class='answer'>
+            <input type="radio" name="answerChoice" required>
+              <span></span>
+          </label><br>
+          <label class='answer'>
+            <input type="radio" name="answerChoice" required>
+              <span></span>
+          </label><br>
+        </form>
+        
+          <!-- status bar -->
+      <div class="row"> 
+        <div class="col-4">
+          <div class="box"><span class="status">Question: 1/10</span></div>
+        </div>
+        <div class="col-4">
+          <div class="box"><span class="score">Points: 0</span></div>
+        </div>
+        <div class="col-4">
+          <div class="box"><input type="image" src="http://melissarte.com/wp-content/uploads/2018/01/submit.png" alt="submit" role="button" id="submit-answer" data-popup-open="popup-feedback" class="submitbtn"></div>
+        </div>
+      </div>
+      </section>
+      
+<!-- Feedback page -->      
+      <div class="popup" data-popup="popup-feedback">
+          <div class="popup-inner">
+              <h2 class='txt-center'></h2>
+              <a id='close-feedback-modal'class="popup-close" data-popup-close="popup-feedback" href="#">X</a>
+          </div>
+      </div>
+      
+<!-- Final page --> 
+      <div class="js-final-results txt-center"></div> <!--Good or bad Display -->
+      <img src="" class="imageResult" alt="">
+      <div>
+        <input type="image" src="http://melissarte.com/wp-content/uploads/2018/01/tryagain.png" alt="try again" role="button" id="start-quiz-over" class="hidden button"> <!--Button is hidden until all questions are answered. -->
+      </div>
+    </div>
+  </main>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
