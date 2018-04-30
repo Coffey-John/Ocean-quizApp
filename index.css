@@ -25,6 +25,13 @@ body {
   cursor: pointer;
 }
 
+.button:focus {
+  outline: 5px dotted salmon;
+}
+.button:hover {
+  outline: 5px dotted salmon;
+}
+
 .quiz-card {
   margin: 0 auto 0 auto;
   padding: 35px;
@@ -32,12 +39,6 @@ body {
   width: 640px;
   border-radius: 8px;
   box-shadow:0px 2px 6px rgba(0,0,0,1);
-}
-
-.submitbtn{
-  display: inline-block;
-  cursor: pointer;
-  height: 40px;
 }
 
 .current-score{
@@ -165,6 +166,8 @@ span.status, span.score {
     line-height:100%;
     color:#fff;
 }
+
+
 
 /*MOBILE STYLES*/
 @media only screen and (max-width: 640px) {
